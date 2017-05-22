@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 		mainCamera = GameObject.Find("Main Camera");
 
 		cameraController = mainCamera.GetComponent<CameraController>();
-		cameraController.enabled = false;
+		//cameraController.enabled = false;
 	}
 	
 	void Update ()

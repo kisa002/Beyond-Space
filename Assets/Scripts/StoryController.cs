@@ -11,23 +11,49 @@ public class StoryController : MonoBehaviour
 
 	Vector3 rot;
 
+	Rigidbody rgd;
+
+	int storyStage = 1;
+
+	bool isStory = false;
+
 	// Use this for initialization
 	void Start () 
 	{
-		tr = this.gameObject.GetComponent<Transform>();
+		tr = GetComponent<Transform>();
+		rgd = GetComponent<Rigidbody>();
+
+		isStory = true;
 	}
 	
-	// Update is called once per frame
-	void Update ()
+	void FixedUpdate()
 	{
-		if(transform.rotation.x <= 0.70)
-			StoryAnimation1();
-
-		//Debug.Log(transform.rotation.x);
+		StoryAnimation(storyStage);
 	}
 
-	public void StoryAnimation1()
+	public void StoryAnimation(int stage)
 	{
-		tr.Rotate(Vector3.right * Time.deltaTime * rotSpeed);
+		if(isStory)
+		{
+			switch(stage)
+			{
+				case 1:
+					if(transform.rotation.x <= 0.70)
+						tr.Rotate(Vector3.right * Time.deltaTime * rotSpeed);
+					else
+					{
+						storyStage++;
+						rgd.useGravity = true;
+					}
+					break;
+				
+				case 2:
+					if(tr.position.y < -700)
+						rgd.AddForce(Vector3.up * 50f);
+					else
+						rgd.AddForce(Vector3.up * 1f);
+					break;
+			}
+		}
 	}
 }
