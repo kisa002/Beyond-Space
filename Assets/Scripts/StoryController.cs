@@ -49,9 +49,12 @@ public class StoryController : MonoBehaviour
 				
 				case 2:
 					if(tr.position.y < -700)
-						rgd.AddForce(Vector3.up * 50f);
+						rgd.AddForce(Vector3.up * 20f);
 					else
+                    {
 						rgd.AddForce(Vector3.up * 1f);
+                        rgd.useGravity = false;
+                    }
 					break;
 			}
 		}
