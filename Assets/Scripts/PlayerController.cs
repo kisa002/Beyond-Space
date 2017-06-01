@@ -12,17 +12,38 @@ public class PlayerController : MonoBehaviour {
 	Transform tr;
 	CameraController cameraController;
 
-	void Start ()
+    public FauxGravityAttractor attractor;
+    private Transform myTransform;
+
+    Rigidbody rgd;
+
+    void Start ()
 	{
 		tr = GetComponent<Transform>();
 
 		mainCamera = GameObject.Find("Main Camera");
 
 		cameraController = mainCamera.GetComponent<CameraController>();
-		//cameraController.enabled = false;
-	}
-	
-	void Update ()
+        //cameraController.enabled = false;
+
+        rgd = GetComponent<Rigidbody>();
+
+        rgd.constraints = RigidbodyConstraints.FreezeRotation;
+
+        myTransform = transform;
+        attractor = GameObject.Find("MoonGround").GetComponent<FauxGravityAttractor>();
+    }
+
+    void FixedUpdate()
+    {
+        if (attractor)
+        {
+            if(GameManager.story == 3)
+                attractor.Attract(myTransform);
+        }
+    }
+
+    void Update ()
 	{
 		Move();
 	}

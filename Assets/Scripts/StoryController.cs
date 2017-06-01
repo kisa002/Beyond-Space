@@ -17,6 +17,8 @@ public class StoryController : MonoBehaviour
 
 	bool isStory = false;
 
+    FauxGravityAttractor attractor;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -24,6 +26,8 @@ public class StoryController : MonoBehaviour
 		rgd = GetComponent<Rigidbody>();
 
 		isStory = true;
+
+        attractor.enabled = false;
 	}
 	
 	void FixedUpdate()
@@ -48,12 +52,15 @@ public class StoryController : MonoBehaviour
 					break;
 				
 				case 2:
-					if(tr.position.y < -700)
+					if(tr.position.y < -1100)
 						rgd.AddForce(Vector3.up * 20f);
 					else
                     {
-						rgd.AddForce(Vector3.up * 1f);
-                        rgd.useGravity = false;
+                        //rgd.AddForce(Vector3.up * 1f);
+                        //rgd.useGravity = false;
+
+                        GameManager.story = 3;
+                        attractor.enabled = true;
                     }
 					break;
 			}
