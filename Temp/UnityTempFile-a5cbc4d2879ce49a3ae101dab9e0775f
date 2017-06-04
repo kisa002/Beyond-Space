@@ -92,6 +92,7 @@
 'Assets/Scripts/GameController.cs'
 'Assets/Scripts/GameManager.cs'
 'Assets/Scripts/Moon/CarController.cs'
+'Assets/Scripts/Moon/GravityObject.cs'
 'Assets/Scripts/Moon/GravityZone.cs'
 'Assets/Scripts/PlayerController.cs'
 'Assets/Scripts/StoryController.cs'
