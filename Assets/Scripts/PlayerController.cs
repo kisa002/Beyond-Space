@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -57,4 +58,10 @@ public class PlayerController : MonoBehaviour {
 
         tr.Translate(moveDir.normalized * Time.deltaTime * hSpeed  , Space.Self);
 	}
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "MoonGround")
+            SceneManager.LoadScene("Moon");
+    }
 }
