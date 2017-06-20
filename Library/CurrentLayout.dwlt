@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 885, y: 492}
   m_MaxSize: {x: 16010, y: 14042}
   vertical: 0
-  controlID: 10692
+  controlID: 3225
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 608, y: 492}
   m_MaxSize: {x: 12008, y: 14042}
   vertical: 1
-  controlID: 10693
+  controlID: 3226
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_MinSize: {x: 608, y: 221}
   m_MaxSize: {x: 12008, y: 4021}
   vertical: 0
-  controlID: 10694
+  controlID: 3174
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,7 +392,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 9269ffff0470ffff1685ffff9c86fffffc8bffff309affff32abffff82baffff80bcffff9ebdffff38c3ffffbac6ffff00000000c63d0000363e0000cc3e0000f64d0000f66000000661000014610000
+    m_ExpandedIDs: 7a2fffffccfbffff00000000762b0000822b00008a2b00009c2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -411,7 +411,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Moon
+  - Game
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -442,14 +442,14 @@ MonoBehaviour:
     width: 602
     height: 533
   m_SceneLighting: 1
-  lastFramingTime: 23263.828765738937
+  lastFramingTime: 3486.1700011092657
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -63.619785, y: -130.8985, z: 27.007778}
+    m_Target: {x: 50.63427, y: 64.09399, z: 10.984656}
     speed: 2
-    m_Value: {x: -63.619785, y: -130.8985, z: 27.007778}
+    m_Value: {x: 50.63427, y: 64.09399, z: 10.984656}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -472,13 +472,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.37623024, y: 0.46729687, z: -0.22937849, w: -0.7664659}
+    m_Target: {x: -0.19976407, y: 0.6939281, z: -0.21034269, w: -0.6590253}
     speed: 2
-    m_Value: {x: -0.37623024, y: 0.46729687, z: -0.22937848, w: -0.76646584}
+    m_Value: {x: -0.19976409, y: 0.69392806, z: -0.21034269, w: -0.6590253}
   m_Size:
-    m_Target: 344.04724
+    m_Target: 11.547019
     speed: 2
-    m_Value: 344.04724
+    m_Value: 11.547019
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -552,19 +552,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Moon
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Moon
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\vnyca\Documents\GitHub\Beyond-Space
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6e340000
-    m_LastClickedID: 13422
-    m_ExpandedIDs: 000000001a34000002350000083500001636000000ca9a3bffffff7f
+    m_SelectedIDs: 4c280000
+    m_LastClickedID: 10316
+    m_ExpandedIDs: 00000000102500009c270000b6270000202b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -592,7 +592,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a34000002350000083500001636000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000102500009c270000b6270000202b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
