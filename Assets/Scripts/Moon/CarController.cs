@@ -16,6 +16,7 @@ public class CarController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Move();
+        Key();
 	}
 
     void Move()
@@ -27,5 +28,11 @@ public class CarController : MonoBehaviour {
 
         transform.Rotate(Vector3.up * Time.deltaTime * h * 50f);
         transform.Translate(Vector3.back * v * speed * Time.deltaTime);
+    }
+
+    void Key()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+            transform.rotation = new Quaternion(0, 0, 0, 0);
     }
 }
