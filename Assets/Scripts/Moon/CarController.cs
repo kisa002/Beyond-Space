@@ -8,9 +8,14 @@ public class CarController : MonoBehaviour {
 
     Rigidbody rgd;
 
+    public GameObject alien;
+
     // Use this for initialization
     void Start () {
         rgd = GetComponent<Rigidbody>();
+
+        //alien = GameObject.Find("Alien");
+        //alien.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -34,5 +39,15 @@ public class CarController : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Space))
             transform.rotation = new Quaternion(0, 0, 0, 0);
+    }
+    
+    public void OnTriggerEnter(Collider other)
+    {
+        switch (other.name)
+        {
+            case "MachineRange":
+                alien.SetActive(true);
+                break;
+        }
     }
 }
