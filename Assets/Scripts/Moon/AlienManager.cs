@@ -6,7 +6,7 @@ public class AlienManager : MonoBehaviour {
 
     GameObject player;
 
-    float speed = 3f;
+    public float speed = 0.1f;
 
 	// Use this for initialization
 	void Start () {
@@ -25,23 +25,27 @@ public class AlienManager : MonoBehaviour {
 
         float x, y, z;
 
-        if (alienPos.x - playerPos.x < 0f)
+		//-145 / 18 / 38
+
+        if (alienPos.x - playerPos.x <= 0f)
             x = speed;
         else
             x = -speed;
 
-        //if (alienPos.y - playerPos.y < 0f)
-        //    y = speed;
-        //else
-        //    y = -speed;
+//        if (alienPos.y - playerPos.y <= 0f)
+//            y = speed;
+//        else
+//            y = -speed;
 
-        if (alienPos.z - playerPos.z < 0f)
+        if (alienPos.z - playerPos.z <= 0f)
             z = speed;
         else
             z = -speed;
 
         transform.position = new Vector3(alienPos.x + x, alienPos.y, alienPos.z + z);
 
-        Debug.LogError("Player : " + playerPos + "\nAlien : " + alienPos);
+        //Debug.LogError("Player : " + playerPos + "\nAlien : " + alienPos);
+
+		transform.LookAt (player.transform);
     }
 }
