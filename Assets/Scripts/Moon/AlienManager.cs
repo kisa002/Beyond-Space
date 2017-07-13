@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class AlienManager : MonoBehaviour {
 
-    GameObject player;
+    public GameObject player;
 
-    float speed = 3f;
+    float speed = 0.2f;
 
 	// Use this for initialization
 	void Start () {
-        player = GameObject.Find("Car");
+        //player = GameObject.Find("Car");
 	}
 	
 	// Update is called once per frame
