@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AlienManager : MonoBehaviour {
 
-    GameObject player;
+    public GameObject player;
 
     public float speed = 0.1f;
 
