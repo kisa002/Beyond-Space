@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour {
 
-    public float speed = 10.0f;
+    public float speed = 1.0f;
 
     Rigidbody rgd;
 
@@ -32,7 +32,7 @@ public class CarController : MonoBehaviour {
         //transform.Translate(Vector2.left * h * speed * Time.deltaTime);
 
         transform.Rotate(Vector3.up * Time.deltaTime * h * 50f);
-        transform.Translate(Vector3.forward * v * speed * Time.deltaTime);
+        transform.Translate(Vector3.back * v * speed * Time.deltaTime);
     }
 
     void Key()

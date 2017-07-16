@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SpaceshipController : MonoBehaviour {
 
-	public bool testMode = false;
-
     Rigidbody rgd;
 
     public int storyStage = 1;
@@ -29,9 +27,6 @@ public class SpaceshipController : MonoBehaviour {
         spaceshipCamera = GameObject.Find("SpaceshipCamera").GetComponent<Camera>();
 
         car.SetActive(false);
-
-		if (testMode == true)
-			speed = 50f;
 	}
 	
 	// Update is called once per frame

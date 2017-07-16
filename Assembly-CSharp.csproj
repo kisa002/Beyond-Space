@@ -61,6 +61,7 @@
      <Compile Include="Assets\Stagit\SkyboxEarthPlanets\script\skyboxspace_demo_v1.cs" />
      <Compile Include="Assets\Stagit\SkyboxEarthPlanets\script\skyboxspace_mouselook_v1.cs" />
      <None Include="Assets\Stagit\SkyboxEarthPlanets\readme.txt" />
+     <None Include="Assets\Stockcar\ReadMe.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/Holy-Knight/Documents/Development/Unity/Projects/Beyond Space/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
