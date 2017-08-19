@@ -6,6 +6,8 @@ public class MoonGameManager : MonoBehaviour {
 
     GameObject alien;
 
+    //int battery = 0;
+
 	// Use this for initialization
 	void Start () {
         alien = GameObject.Find("Alien");

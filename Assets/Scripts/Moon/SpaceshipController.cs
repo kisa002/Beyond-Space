@@ -40,7 +40,7 @@ public class SpaceshipController : MonoBehaviour {
         {
             case 1:
                 //rgd.AddForce(Vector3.down * speed);
-                if (transform.position.y >= 25f)
+                if (transform.position.y >= 3f)
                     transform.Translate(Vector3.down * speed * Time.deltaTime);
                 else
                 {
