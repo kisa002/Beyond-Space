@@ -1,6 +1,10 @@
 ﻿<Properties StartupItem="Beyond-Space.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\OVR\Shaders\Unlit Crosshair.shader">
+    <Files>
+      <File FileName="Assets\OVR\Shaders\Unlit Crosshair.shader" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
