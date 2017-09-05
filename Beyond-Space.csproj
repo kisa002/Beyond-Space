@@ -170,9 +170,13 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\CarSwitcher.cs" />
+    <Compile Include="Assets\Scripts\DriftCamera.cs" />
+    <Compile Include="Assets\Scripts\EasySuspension.cs" />
     <Compile Include="Assets\Scripts\FauxGravityAttractor.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GraphOverlay.cs" />
     <Compile Include="Assets\Scripts\Moon\AlienManager.cs" />
     <Compile Include="Assets\Scripts\Moon\CarController.cs" />
     <Compile Include="Assets\Scripts\Moon\GravityObject.cs" />
@@ -181,6 +185,7 @@
     <Compile Include="Assets\Scripts\Moon\SpaceshipController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\StoryController.cs" />
+    <Compile Include="Assets\Scripts\WheelDrive.cs" />
     <Compile Include="Assets\Space rocket models\Scripts\PhysicsSwitch.cs" />
     <Compile Include="Assets\Space rocket models\Scripts\PhysicsSwitch2.cs" />
     <Compile Include="Assets\Space rocket models\Scripts\TerrainDetails.cs" />
@@ -192,6 +197,7 @@
   <ItemGroup>
     <None Include="Assets\Allsky\AllSkyDemoEnvironment\Specular Snow Vertex Colours.shader" />
     <None Include="Assets\Allsky\allsky_readme.txt" />
+    <None Include="Assets\Fonts\LICENSE.txt" />
     <None Include="Assets\Moon\Shaders\TerrBumpAddPass.shader" />
     <None Include="Assets\Moon\Shaders\TerrBumpFirstPass.shader" />
     <None Include="Assets\Moon\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
@@ -290,6 +296,25 @@
     <None Include="Assets\Space rocket models\Effects\Flames\Shaders\Heat.shader" />
     <None Include="Assets\Space rocket models\Effects\Flames\Shaders\SmokeTurbulent.shader" />
     <None Include="Assets\Stagit\SkyboxEarthPlanets\readme.txt" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\Alpha-Diffuse-ZWrite.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\Alpha-VertexLitGlow02.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\AlphaTest-Diffuse-GEqual.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\GlassBuilding.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\GlassReflect.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\Glassreflect2D.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\LightMappedDiffusetDetail.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\LightsEmmissive.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\MirrorReflectionLit.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\Normal-BumpSpec_EnvLightmapped.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\PolyTerrain\FirstPassLightmap.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\PolyTerrain\polysplatting.cginc" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\ShadowProjection.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\Skidmarks.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Shaders\TransparentLightMappedVertexLiZWrite.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\Environment\Textures\VFX\ShadowProjection.shader" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\compendium.txt" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\settings physics.txt" />
+    <None Include="Assets\Vehicle Physics Toolkit v1.4\videoTutorial.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

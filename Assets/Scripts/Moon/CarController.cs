@@ -35,6 +35,9 @@ public class CarController : MonoBehaviour {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
+        //float transX = Input.GetAxis("Mouse X");
+        //float transY = Input.GetAxis("Mouse Y");
+
         //transform.Translate(Vector2.left * h * speed * Time.deltaTime);
 
         transform.Rotate(Vector3.up * Time.deltaTime * h * 50f);
