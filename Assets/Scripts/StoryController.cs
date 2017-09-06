@@ -19,6 +19,8 @@ public class StoryController : MonoBehaviour
 
     ThrustMainBlock tmb;
 
+    Camera mainCamera;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -28,6 +30,8 @@ public class StoryController : MonoBehaviour
 		isStory = true;
 
         tmb = GameObject.Find("rocket7").GetComponent<ThrustMainBlock>();
+
+        mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
 	}
 	
 	void FixedUpdate()
@@ -42,33 +46,33 @@ public class StoryController : MonoBehaviour
 			switch(stage)
 			{
 				case 1:
-					if(transform.rotation.x >= 0) //0.70
+					if(transform.rotation.x <= 0.7) //0.70 or 0
 						tr.Rotate(Vector3.right * Time.deltaTime * rotSpeed);
 					else
 					{
 						storyStage++;
-                        tmb.EngineOn = true;
-                        tmb.thrust = 0;
+                        //tmb.EngineOn = true;
+                        //tmb.thrust = 0;
 
-                        StartCoroutine(Booster());
+                        //StartCoroutine(Booster());
 
                         //rgd.useGravity = true;
                     }
 					break;
-				
-				//case 2:
-				//	if(tr.position.y < -1100)
-				//		rgd.AddForce(Vector3.up * 20f);
-				//	else
-    //                {
-    //                    //rgd.AddForce(Vector3.up * 1f);
-    //                    //rgd.useGravity = false;
 
-    //                    GameManager.story = 3;
-    //                }
-				//	break;
-			}
-		}
+                case 2:
+                    if (tr.position.y < -1100)
+                        rgd.AddForce(Vector3.up * 20f);
+                    else
+                    {
+                        rgd.AddForce(Vector3.up * 1f);
+                        rgd.useGravity = false;
+
+                        GameManager.story = 3;
+                    }
+                    break;
+            }
+        }
 	}
 
     IEnumerator Booster()
@@ -84,4 +88,5 @@ public class StoryController : MonoBehaviour
             StartCoroutine(Booster());
         }
     }
+    
 }

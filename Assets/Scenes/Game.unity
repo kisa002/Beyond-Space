@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2980,8 +2980,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 429944736}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -353.879, y: -1161.2112, z: 63.19935}
-  m_LocalScale: {x: 1300.0005, y: 1000, z: 1000.0005}
+  m_LocalPosition: {x: -353.879, y: -1237.47, z: 63.19935}
+  m_LocalScale: {x: 1300.0005, y: 847.48193, z: 1000.0005}
   m_Children: []
   m_Father: {fileID: 2096288669}
   m_RootOrder: 5
@@ -3283,7 +3283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &451343441
 Transform:
   m_ObjectHideFlags: 0
@@ -3291,7 +3291,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 451343440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 183.7, y: -8121.39, z: 31.34}
+  m_LocalPosition: {x: 190, y: -8115, z: 27.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1969923592}
@@ -5087,8 +5087,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 612927544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 227.121, y: -1161.2112, z: 518.19934}
-  m_LocalScale: {x: 1300, y: 1000, z: 1000}
+  m_LocalPosition: {x: 227.121, y: -1237.31, z: 518.19934}
+  m_LocalScale: {x: 1300, y: 847.79346, z: 1000}
   m_Children: []
   m_Father: {fileID: 2096288669}
   m_RootOrder: 2
@@ -11920,7 +11920,7 @@ GameObject:
   - component: {fileID: 1053765225}
   - component: {fileID: 1053765224}
   m_Layer: 0
-  m_Name: Quad (1)
+  m_Name: quadFar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11933,7 +11933,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1053765222}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 135.121, y: -683.2, z: -11}
+  m_LocalPosition: {x: 135.121, y: -719, z: -11}
   m_LocalScale: {x: 1052.7557, y: 1461.3683, z: 1000.0005}
   m_Children: []
   m_Father: {fileID: 2096288669}
@@ -11952,7 +11952,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11978,10 +11978,10 @@ MeshCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1053765222}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
@@ -12152,7 +12152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1063537351
 Transform:
   m_ObjectHideFlags: 0
@@ -17771,8 +17771,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1317850182}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 227.121, y: -1161.2112, z: -555.80066}
-  m_LocalScale: {x: 1300, y: 1000, z: 1000}
+  m_LocalPosition: {x: 227.121, y: -1236.7, z: -555.80066}
+  m_LocalScale: {x: 1300, y: 849.01465, z: 1000}
   m_Children: []
   m_Father: {fileID: 2096288669}
   m_RootOrder: 3
@@ -27979,7 +27979,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779717941}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 7.781, y: -1.945, z: -12.266}
+  m_LocalPosition: {x: 0.05, y: 2.109, z: -0.536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1969923592}
@@ -28027,7 +28027,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.350346, g: 0.7534451, b: 0.99264705, a: 0.019607844}
+  m_BackGroundColor: {r: 0.6764706, g: 0.3566907, b: 0.28352076, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -28035,7 +28035,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 1000000
+  far clip plane: 30000
   field of view: 76
   orthographic: 0
   orthographic size: 5
@@ -28290,8 +28290,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1807730316}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 621, y: -1161.2112, z: 63}
-  m_LocalScale: {x: 1300.0005, y: 1000, z: 1000.0005}
+  m_LocalPosition: {x: 621, y: -1236.84, z: 63}
+  m_LocalScale: {x: 1300.0005, y: 848.6489, z: 1000.0005}
   m_Children: []
   m_Father: {fileID: 2096288669}
   m_RootOrder: 4
