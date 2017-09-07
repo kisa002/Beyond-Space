@@ -633,7 +633,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 313303205}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -5, y: -27, z: 260}
+  m_LocalPosition: {x: 5.1, y: -27, z: 260}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 1595444775}
@@ -1474,7 +1474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 870703354}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 62.764004, y: -0.09900001, z: 86.717}
 --- !u!108 &834935525
 Light:
@@ -1718,11 +1718,11 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 7f3804a7bdfcbb64c806dc13f0d09609, type: 2}
     - target: {fileID: 400002, guid: c505e2d97233012498e588c26a074a18, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c505e2d97233012498e588c26a074a18, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: c505e2d97233012498e588c26a074a18, type: 3}
       propertyPath: m_IsActive
@@ -1730,7 +1730,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: c505e2d97233012498e588c26a074a18, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c505e2d97233012498e588c26a074a18, type: 3}
@@ -1760,9 +1760,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483f73aeb941ef34fb79329d8b8b75ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 32
   alien: {fileID: 1148476127}
-  battery: 0
+  battery: 3
 --- !u!65 &976216649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1782,8 +1782,8 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 976216645}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 1.5
+  m_Mass: 11
+  m_Drag: 0
   m_AngularDrag: 500
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2228,6 +2228,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4794271075078500, guid: 6bee5d355039f8f49a93288cc6b16286, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391616322874462, guid: 6bee5d355039f8f49a93288cc6b16286, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6bee5d355039f8f49a93288cc6b16286, type: 2}
   m_IsPrefabParent: 0
@@ -2246,7 +2254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d0995b8d9911047b4c603a5bcc0519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.15
+  speed: 0.3
 --- !u!1 &1273043814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,7 +2351,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1274535744}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 75, y: -27, z: 182.7}
+  m_LocalPosition: {x: 10.4, y: -27, z: 230.7}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 1595444775}
@@ -2737,7 +2745,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1449555938}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -90, y: -27, z: 166.9}
+  m_LocalPosition: {x: -14.3, y: -27, z: 71.9}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 1595444775}
@@ -3839,7 +3847,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1997544565}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -165, y: -27, z: 220}
+  m_LocalPosition: {x: -10.1, y: -27, z: 187.5}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 1595444775}
@@ -4046,7 +4054,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 870703354}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 209.201, y: 0, z: 0}
 --- !u!108 &2075405244
 Light:

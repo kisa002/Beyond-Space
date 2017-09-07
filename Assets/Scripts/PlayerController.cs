@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour {
 
         myTransform = transform;
         attractor = GameObject.Find("MoonGround").GetComponent<FauxGravityAttractor>();
+
+        //RenderSettings.skybox = 
     }
 
     void FixedUpdate()
