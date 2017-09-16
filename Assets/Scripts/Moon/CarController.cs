@@ -6,6 +6,8 @@ public class CarController : MonoBehaviour {
 
     public float speed = 1.0f;
 
+    public int air = 0;
+
     public GameObject alien;
 
     GameObject bigDoor;
@@ -52,7 +54,7 @@ public class CarController : MonoBehaviour {
 
     void BigDoor()
     {
-        if(battery >= 5)
+        if(battery >= 4)
         {
             if (bigDoor.transform.position.y > -23.0f)
                 bigDoor.transform.Translate(Vector3.down * 0.05f);
@@ -67,6 +69,38 @@ public class CarController : MonoBehaviour {
         {
             case "MachineRange":
                 alien.SetActive(true);
+                break;
+
+            case "GroundCheck1":
+                air = 1;
+                break;
+
+            case "GroundCheck2":
+                air = 2;
+                break;
+
+            case "GroundCheck3":
+                air = 3;
+                break;
+
+            case "GroundCheck4":
+                air = 4;
+                break;
+
+            case "GroundCheck5":
+                air = 5;
+                break;
+
+            case "GroundCheck6":
+                air = 6;
+                break;
+
+            case "GroundCheck7":
+                air = 7;
+                break;
+
+            case "GroundCheck8":
+                air = 8;
                 break;
         }
     }
